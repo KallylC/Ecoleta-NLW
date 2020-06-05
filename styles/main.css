@@ -8,6 +8,7 @@ bordas, cor, alinhamentos, dadas fundo, maneira que é vista pelo html (display)
 :root {
     --title-color: #322153;
     --primary-color: #34cb79;
+    --secondary-color: #f0f0f5;
 }
 
 * {
