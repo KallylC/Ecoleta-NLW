@@ -43,7 +43,9 @@ function populateUFs() {
        .querySelector("select[name=uf]")
        .addEventListener("change", getCities)
 
-// itens de coleta
+//   ======itens de coleta======
+
+//pegar os itens de coleta
 const ItemsToCollect = document.querySelectorAll(".items-grid li")
 
 for (const item of ItemsToCollect) {
@@ -61,6 +63,8 @@ function handleSelectedItem(event) {
     itemLi.classList.toggle("selected")
 
     const itemId = itemLi.dataset.id
+
+    //console.log('item ID: ', itemId)
 
 // vereficar se existem itens selecionados, se sim
 // pegar os itens selecionados
@@ -85,6 +89,7 @@ if( alreadySelected >= 0 ) {
     selectedItems.push(itemId)
 }
 
+//console.log('selectedItems')
 // atualizar o campo escondido com os itens selecionados
 
     collectedItems.value = selectedItems

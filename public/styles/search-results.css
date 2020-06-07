@@ -1,11 +1,17 @@
+body {
+    background-color: white;
+
+}
+
 body::after {
     content: "";
-    position: fixed;
-    background: white;
-    top: 280px;
+    position: absolute;
+    background: #f0f0f5;
+    top: 0;
     right: 0;
     left: 0;
     bottom: 0;
+    height: 16rem;
     z-index: -1;
 }
 
@@ -45,7 +51,7 @@ main {
 main h4 {
     font-weight: normal;
     font-family: Roboto, sans-serif;
-    color: rgb(131, 130, 128);
+    color: var(--title-color);
     margin-bottom: 32px;
 }
 
